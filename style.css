@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: white;
+    margin: 0;
+  }
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: #db03fc;
+    background-image: linear-gradient(
+        115deg,
+        rgba(201, 70, 113, 0.8),
+        rgba(144, 144, 238, 0.7)
+      ),
+      url(https://news.careervio.com/content/images/size/w600/2021/11/Untitled-design.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+header {
+    margin-top: 40px;
+    /* color: black; */
+}
+
+#title {
+    text-align: center;
+    font-weight: 400;
+}
+
+#description {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+
+
+#survey-form {
+    padding: 40px 60px;
+    margin: 15px 200px;
+}
+
+form {
+  background: rgba(27, 27, 50, 0.6);
+  padding: 2.5rem 0.625rem;
+  border-radius: 0.25rem;
+}
+
+form > div.form-group {
+    margin-bottom: 25px;
+}
+
+@media (max-width: 1200px) {
+   #survey-form {
+      margin: 15px 100px ;
+  }
+}
+
+@media (max-width: 900px) {
+   #survey-form {
+      margin: 15px 30px ;
+  }
+}
+
+@media (max-width: 790px) {
+   p#description {
+      font-size: 1rem;
+  }
+}
